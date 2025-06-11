@@ -1,0 +1,26 @@
+{
+  "name": "dt003g---moment-1",
+  "version": "1.0.0",
+  "author": "Ängla Juliusson",
+  "license": "ISC",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.2",
+    "jsdoc": "^4.0.4",
+    "parcel": "^2.15.2",
+    "sass": "^1.89.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "engines": {
+    "node": ">= 12"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.8"
+  }
+}

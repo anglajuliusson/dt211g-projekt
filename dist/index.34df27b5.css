@@ -1,0 +1,152 @@
+body {
+  background-color: #198f99;
+}
+
+h1 {
+  color: #fff;
+  margin: 2em;
+}
+
+.headmenu {
+  background-color: #08484e;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav-links {
+  gap: 70px;
+  padding: 1em;
+  font-size: larger;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.duärhär {
+  text-decoration: underline !important;
+}
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  background-color: #c2eff3;
+  max-width: 600px;
+  margin: 2em;
+}
+
+.infoheader, .processheader {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.infotext {
+  max-width: 500px;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+@media (width >= 1025px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "headmenu"
+                         "infotext"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: headmenu;
+  }
+
+  main {
+    grid-area: infotext;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    grid-area: footer;
+    font-size: large;
+  }
+}
+
+@media (width <= 1024px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "headmenu"
+                         "infotext"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: headmenu;
+  }
+
+  main {
+    grid-area: infotext;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    grid-area: footer;
+    font-size: large;
+  }
+}
+
+@media (width <= 600px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "headmenu"
+                         "infotext"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: headmenu;
+  }
+
+  main {
+    grid-area: infotext;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    grid-area: footer;
+    font-size: medium;
+  }
+}
+/*# sourceMappingURL=index.34df27b5.css.map */

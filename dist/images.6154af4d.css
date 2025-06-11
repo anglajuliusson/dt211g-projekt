@@ -1,0 +1,263 @@
+body {
+  background-color: #198f99;
+}
+
+h1 {
+  color: #fff;
+  margin: 2em;
+}
+
+.headmenu {
+  background-color: #08484e;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav-links {
+  gap: 70px;
+  padding: 1em;
+  font-size: larger;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.duärhär {
+  text-decoration: underline !important;
+}
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  background-color: #c2eff3;
+  justify-content: center;
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+}
+
+img {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+}
+
+.bilderheader {
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  font-size: large;
+}
+
+@media (width >= 1025px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "menu"
+                         "main"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: menu;
+  }
+
+  .main {
+    grid-area: main;
+    grid-template-rows: auto;
+    grid-template-areas: "bilderheader"
+                         "img";
+    display: grid;
+  }
+
+  .bilderheader {
+    grid-area: bilderheader;
+  }
+
+  .img {
+    grid-area: img;
+    grid-template-rows: auto;
+    grid-template-areas: "paprikan skelleftealven vindelalven"
+                         "ronnberg trollforsen emty";
+    display: grid;
+  }
+
+  .paprikan {
+    grid-area: paprikan;
+  }
+
+  .ronnberg {
+    grid-area: ronnberg;
+  }
+
+  .skelleftealven {
+    grid-area: skelleftealven;
+  }
+
+  .trollforsen {
+    grid-area: trollforsen;
+  }
+
+  .vindelalven {
+    grid-area: vindelalven;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+
+@media (width <= 1024px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "menu"
+                         "main"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: menu;
+  }
+
+  .main {
+    grid-area: main;
+    grid-template-rows: auto;
+    grid-template-areas: "bilderheader"
+                         "img";
+    display: grid;
+  }
+
+  .bilderheader {
+    grid-area: bilderheader;
+  }
+
+  .img {
+    grid-area: img;
+    grid-template-rows: auto;
+    grid-template-areas: "paprikan skelleftealven"
+                         "vindelalven ronnberg"
+                         "trollforsen empty";
+    display: grid;
+  }
+
+  .paprikan {
+    grid-area: paprikan;
+  }
+
+  .ronnberg {
+    grid-area: ronnberg;
+  }
+
+  .skelleftealven {
+    grid-area: skelleftealven;
+  }
+
+  .trollforsen {
+    grid-area: trollforsen;
+  }
+
+  .vindelalven {
+    grid-area: vindelalven;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+
+@media (width <= 600px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "menu"
+                         "main"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: menu;
+  }
+
+  .main {
+    grid-area: main;
+    grid-template-rows: auto;
+    grid-template-areas: "bilderheader"
+                         "img";
+    display: grid;
+  }
+
+  .bilderheader {
+    grid-area: bilderheader;
+  }
+
+  .img {
+    grid-area: img;
+    grid-template-rows: auto;
+    grid-template-areas: "paprikan"
+                         "skelleftealven"
+                         "vindelalven"
+                         "ronnberg"
+                         "trollforsen";
+    display: grid;
+  }
+
+  .paprikan {
+    grid-area: paprikan;
+  }
+
+  .ronnberg {
+    grid-area: ronnberg;
+  }
+
+  .skelleftealven {
+    grid-area: skelleftealven;
+  }
+
+  .trollforsen {
+    grid-area: trollforsen;
+  }
+
+  .vindelalven {
+    grid-area: vindelalven;
+  }
+
+  .footer {
+    grid-area: footer;
+    font-size: medium;
+  }
+}
+/*# sourceMappingURL=images.6154af4d.css.map */
