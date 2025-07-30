@@ -25,6 +25,7 @@
             grid-template-areas: 
             "h1 headertext";
             grid-template-rows: auto;
+            gap: 3em;
             h1 {
                 grid-area: h1;
             }
@@ -74,6 +75,7 @@
             grid-template-areas: 
             "h1 headertext";
             grid-template-rows: auto;
+            gap: 3em;
             h1 {
                 grid-area: h1;
             }
@@ -123,6 +125,7 @@
             grid-template-areas: 
             "h1 headertext";
             grid-template-rows: auto;
+            gap: 1em;
             h1 {
                 grid-area: h1;
             }
