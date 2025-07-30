@@ -123,7 +123,8 @@
             @extend %centered-content-mobile;
             display: grid;
             grid-template-areas: 
-            "h1 headertext";
+            "h1"
+            "headertext";
             grid-template-rows: auto;
             gap: 1em;
             h1 {
