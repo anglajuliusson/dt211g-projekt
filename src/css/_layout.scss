@@ -19,7 +19,7 @@
 
         .header {
             grid-area: header;
-            margin: 2em;
+            margin-bottom: 2em;
             @extend %centered-content-computer;
             display: grid;
             grid-template-areas: 
@@ -69,7 +69,7 @@
 
         .header {
             grid-area: header;
-            margin: 2em;
+            margin-bottom: 2em;
             @extend %centered-content;
             display: grid;
             grid-template-areas: 
@@ -119,7 +119,7 @@
 
         .header {
             grid-area: header;
-            margin: 2em;
+            margin-bottom: 2em;
             @extend %centered-content-mobile;
             display: grid;
             grid-template-areas: 

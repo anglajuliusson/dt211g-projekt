@@ -12,7 +12,7 @@
   }
   body .header {
     grid-area: header;
-    margin: 2em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-areas: "h1 headertext";
     grid-template-rows: auto;
@@ -53,7 +53,7 @@
   }
   body .header {
     grid-area: header;
-    margin: 2em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-areas: "h1 headertext";
     grid-template-rows: auto;
@@ -94,7 +94,7 @@
   }
   body .header {
     grid-area: header;
-    margin: 2em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-areas: "h1" "headertext";
     grid-template-rows: auto;
