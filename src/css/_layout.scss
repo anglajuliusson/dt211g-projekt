@@ -99,7 +99,7 @@
         }
     }
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     %centered-content-mobile {
         justify-content: center;
         align-items: center;
