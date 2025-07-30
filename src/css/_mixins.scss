@@ -1,2 +1,19 @@
 @use "base";
 
+// Svart text
+@mixin dark-text {
+    color: base.$dark-font-color;
+}
+
+@media (min-width: 1px) {
+    body {
+        background-color: base.$background-color;
+        @include dark-text;
+        header {
+            background-color: base.$header-color;
+        }
+        footer {
+            background-color: base.$footer-color;
+        }
+    }
+}
