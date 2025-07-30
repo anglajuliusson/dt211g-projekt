@@ -98,7 +98,7 @@
     display: grid;
     grid-template-areas: "h1" "headertext";
     grid-template-rows: auto;
-    gap: 1em;
+    gap: 0.5em;
   }
   body .header h1 {
     grid-area: h1;
