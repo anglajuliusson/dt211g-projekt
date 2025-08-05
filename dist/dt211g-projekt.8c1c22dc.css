@@ -1,2 +1,168 @@
+@media (width >= 1025px) {
+  body .footer, body .main, body .header, body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    margin: 0;
+    display: grid;
+  }
+
+  body .header {
+    grid-area: header;
+    grid-template-rows: auto;
+    grid-template-areas: "h1 headertext";
+    gap: 3em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: grid;
+  }
+
+  body .header h1 {
+    grid-area: h1;
+  }
+
+  body .header p {
+    grid-area: headertext;
+  }
+
+  body .main {
+    grid-area: main;
+    margin: auto;
+    padding: 2em;
+  }
+
+  body .footer {
+    grid-area: footer;
+    width: 100vw;
+    margin-top: 3em;
+    padding: 2em;
+  }
+
+  body .footer p {
+    font-size: large;
+  }
+}
+
+@media (width <= 1024px) {
+  body .footer, body .main, body .header, body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    margin: 0;
+    display: grid;
+  }
+
+  body .header {
+    grid-area: header;
+    grid-template-rows: auto;
+    grid-template-areas: "h1 headertext";
+    gap: 3em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: grid;
+  }
+
+  body .header h1 {
+    grid-area: h1;
+  }
+
+  body .header p {
+    grid-area: headertext;
+  }
+
+  body .main {
+    grid-area: main;
+    margin: auto;
+    padding: 2em;
+  }
+
+  body .footer {
+    grid-area: footer;
+    width: 100vw;
+    margin-top: 3em;
+    padding: 2em;
+  }
+
+  body .footer p {
+    font-size: large;
+  }
+}
+
+@media (width <= 600px) {
+  body .footer, body .main, body .header, body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    margin: 0;
+    display: grid;
+  }
+
+  body .header {
+    grid-area: header;
+    grid-template-rows: auto;
+    grid-template-areas: "h1"
+                         "headertext";
+    gap: 10px;
+    margin-bottom: 2em;
+    padding: 1em;
+    display: grid;
+  }
+
+  body .header h1 {
+    grid-area: h1;
+  }
+
+  body .header p {
+    grid-area: headertext;
+  }
+
+  body .main {
+    grid-area: main;
+    margin: auto;
+    padding: 2em;
+  }
+
+  body .footer {
+    grid-area: footer;
+    width: 100vw;
+    margin-top: 3em;
+    padding: 2em;
+  }
+
+  body .footer p {
+    font-size: small;
+  }
+}
+
+@media (width >= 1px) {
+  body {
+    color: #000;
+    background-color: #ffffe0;
+  }
+
+  body header, body footer {
+    background-color: #ffff8e;
+  }
+}
 /*# sourceMappingURL=dt211g-projekt.8c1c22dc.css.map */
