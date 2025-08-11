@@ -32,6 +32,11 @@
   body .header .search {
     grid-area: search;
   }
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   body .main {
     grid-area: main;
     display: grid;
@@ -39,6 +44,7 @@
     grid-template-rows: auto;
     padding: 2em;
     margin: auto;
+    flex: 1;
   }
   body .main #result {
     grid-area: result;
