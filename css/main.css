@@ -43,7 +43,7 @@
   body .main #result {
     grid-area: result;
     display: grid;
-    grid-template-areas: "drinkName drinkName" "img instructions" "gif recept";
+    grid-template-areas: "drinkName drinkName" "img instructions" "img recept" "gif gif";
     grid-template-rows: auto auto auto;
     row-gap: 0.2em;
   }
