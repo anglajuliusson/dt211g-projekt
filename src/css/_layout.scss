@@ -58,6 +58,7 @@
                 "img instructions"
                 "gif recept";
                 grid-template-rows: auto;
+                row-gap: 0.2em;
                 @extend %centered-content-computer;
                 h2 {
                     grid-area: drinkName;
