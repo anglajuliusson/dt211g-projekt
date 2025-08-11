@@ -50,7 +50,6 @@
             grid-template-rows: auto;
             padding: 2em;
             margin: auto;
-            flex: 1;
             @extend %centered-content-computer;
             #result {
                 grid-area: result;
