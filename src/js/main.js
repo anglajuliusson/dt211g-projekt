@@ -36,21 +36,39 @@ async function fetchCocktail(cocktailName) {
       resultContainer.innerHTML = "<p>Ingen drink hittades.</p>";
       return;
     }
-  
+    // Titel
     const title = document.createElement("h2");
     title.textContent = cocktail.strDrink;
   
+    // Bild
     const image = document.createElement("img");
     image.src = cocktail.strDrinkThumb;
     image.alt = cocktail.strDrink;
   
+    // Beskrinving
     const instructions = document.createElement("p");
     instructions.textContent = cocktail.strInstructions;
   
+    // Recept
+    const ingredientList = document.createElement("ul");
+    ingredientList.classList.add("ingredients");
+
+    for (let i = 1; i <= 15; i++) { // Loopa igenom alla möjliga ingrediensfält, API:et har max 15 st
+        const ingredient = cocktail[`strIngredient${i}`];
+        const measure = cocktail[`strMeasure${i}`];
+    if (ingredient) {
+        const li = document.createElement("li");
+        li.textContent = `${measure || ""} ${ingredient}`;
+        ingredientList.appendChild(li);
+        }
+    }
+
     resultContainer.appendChild(title);
     resultContainer.appendChild(image);
     resultContainer.appendChild(instructions);
+    resultContainer.appendChild(ingredientList);
   
+    // GIF
     if (gifUrl) {
       const gif = document.createElement("img");
       gif.src = gifUrl;
