@@ -14,10 +14,13 @@
     grid-area: header;
     margin-bottom: 2em;
     display: grid;
-    grid-template-areas: "h1 headertext";
+    grid-template-areas: "icon h1 headertext";
     grid-template-rows: auto;
     gap: 3em;
     padding: 2em;
+  }
+  body .header .icon {
+    grid-area: icon;
   }
   body .header h1 {
     grid-area: h1;
@@ -56,10 +59,13 @@
     grid-area: header;
     margin-bottom: 2em;
     display: grid;
-    grid-template-areas: "h1 headertext";
+    grid-template-areas: "icon h1 headertext";
     grid-template-rows: auto;
     gap: 3em;
     padding: 2em;
+  }
+  body .header .icon {
+    grid-area: icon;
   }
   body .header h1 {
     grid-area: h1;
@@ -98,10 +104,13 @@
     grid-area: header;
     margin-bottom: 2em;
     display: grid;
-    grid-template-areas: "h1" "headertext";
+    grid-template-areas: "icon h1" "headertextn headertext";
     grid-template-rows: auto;
     gap: 10px;
     padding: 1em;
+  }
+  body .header .icon {
+    grid-area: icon;
   }
   body .header h1 {
     grid-area: h1;
