@@ -14,7 +14,7 @@
     grid-area: header;
     margin-bottom: 2em;
     display: grid;
-    grid-template-areas: "icon h1 headertext";
+    grid-template-areas: "icon h1 headertext search";
     grid-template-rows: auto;
     gap: 3em;
     padding: 2em;
@@ -28,16 +28,16 @@
   body .header p {
     grid-area: headertext;
   }
+  body .header .search {
+    grid-area: search;
+  }
   body .main {
     grid-area: main;
     display: grid;
-    grid-template-areas: "search" "result";
+    grid-template-areas: "result";
     grid-template-rows: auto;
     padding: 2em;
     margin: auto;
-  }
-  body .main .search {
-    grid-area: search;
   }
   body .main #result {
     grid-area: result;

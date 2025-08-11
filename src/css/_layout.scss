@@ -23,7 +23,7 @@
             @extend %centered-content-computer;
             display: grid;
             grid-template-areas: 
-            "icon h1 headertext";
+            "icon h1 headertext search";
             grid-template-rows: auto;
             gap: 3em;
             padding: 2em;
@@ -36,20 +36,19 @@
             p {
                 grid-area: headertext;
             }
+            .search {
+                grid-area: search;
+            }
         }
         .main {
             grid-area: main;
             display: grid;
             grid-template-areas: 
-            "search"
             "result";
             grid-template-rows: auto;
             padding: 2em;
             margin: auto;
             @extend %centered-content-computer;
-            .search {
-                grid-area: search;
-            }
             #result {
                 grid-area: result;
                 display: grid;
