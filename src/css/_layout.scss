@@ -287,7 +287,7 @@
             padding: 2em;
             margin: auto;
             flex: 1;
-            @extend %centered-content-computer;
+            @extend %centered-content-mobile;
             #result {
                 grid-area: result;
                 display: grid;
@@ -299,7 +299,7 @@
                 "gif";
                 grid-template-rows: auto auto auto;
                 row-gap: 0.2em;
-                @extend %centered-content-computer;
+                @extend %centered-content-mobile;
                 h2 {
                     grid-area: drinkName;
                     font-size: larger;
