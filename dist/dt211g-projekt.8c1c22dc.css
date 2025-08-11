@@ -86,6 +86,8 @@
   body .main #result ul {
     text-align: left;
     grid-area: recept;
+    width: 100%;
+    max-width: 400px;
     margin-left: 2em;
     margin-right: 2em;
     font-size: large;
