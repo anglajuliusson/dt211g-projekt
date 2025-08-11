@@ -66,18 +66,37 @@
 
   body .main #result img {
     grid-area: img;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   body .main #result p {
     grid-area: instructions;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: large;
   }
 
   body .main #result ul {
+    text-align: left;
     grid-area: recept;
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 20px;
   }
 
   body .main #result .gif {
     grid-area: gif;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   body .footer {

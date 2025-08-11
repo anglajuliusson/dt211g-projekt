@@ -51,15 +51,34 @@
   }
   body .main #result img {
     grid-area: img;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-right: 2em;
+    margin-left: 2em;
   }
   body .main #result p {
     grid-area: instructions;
+    font-size: large;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 2em;
+    margin-left: 2em;
   }
   body .main #result ul {
     grid-area: recept;
+    text-align: left;
+    line-height: 20px;
+    margin-right: 2em;
+    margin-left: 2em;
   }
   body .main #result .gif {
     grid-area: gif;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-right: 2em;
+    margin-left: 2em;
   }
   body .footer {
     grid-area: footer;
