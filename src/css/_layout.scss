@@ -144,7 +144,8 @@
             @extend %centered-content;
             display: grid;
             grid-template-areas: 
-            "icon h1 headertext";
+            "icon h1"
+            "headertext search";
             grid-template-rows: auto;
             gap: 3em;
             padding: 2em;
@@ -158,11 +159,74 @@
                 grid-area: headertext;
             }
         }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
         .main {
             grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "result";
+            grid-template-rows: auto;
             padding: 2em;
             margin: auto;
+            flex: 1;
             @extend %centered-content;
+            #result {
+                grid-area: result;
+                display: grid;
+                grid-template-areas: 
+                "drinkName drinkName"
+                "img instructions"
+                "img recept"
+                "gif gif";
+                grid-template-rows: auto auto auto;
+                row-gap: 0.2em;
+                @extend %centered-content;
+                h2 {
+                    grid-area: drinkName;
+                    font-size: xx-large;
+                    margin-bottom: 2em;
+                }
+                img {
+                    grid-area: img;
+                    max-width: 200px;
+                    width: 100%;
+                    height: auto;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                }
+                p {
+                    grid-area: instructions;
+                    font-size: larger;
+                    max-width: 400px;
+                    width: 100%;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                    margin-bottom: 0 !important;
+                }
+                ul {
+                    grid-area: recept;
+                    text-align: left;
+                    line-height: 20px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    font-size: larger;
+                    max-width: 400px;
+                    width: auto;
+                    margin-top: 0 !important;
+                }
+                .gif {
+                    grid-area: gif;
+                    max-width: 200px;
+                    width: 100%;
+                    height: auto;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                }
+            }
         }
         .footer {
             grid-area: footer;
@@ -199,7 +263,8 @@
             display: grid;
             grid-template-areas: 
             "icon h1"
-            "headertextn headertext";
+            "headertext"
+            "search";
             grid-template-rows: auto;
             gap: 10px;
             padding: 1em;
@@ -215,9 +280,68 @@
         }
         .main {
             grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "result";
+            grid-template-rows: auto;
             padding: 2em;
             margin: auto;
-            @extend %centered-content-mobile;
+            flex: 1;
+            @extend %centered-content-computer;
+            #result {
+                grid-area: result;
+                display: grid;
+                grid-template-areas: 
+                "drinkName"
+                "img"
+                "instructions"
+                "recept"
+                "gif";
+                grid-template-rows: auto auto auto;
+                row-gap: 0.2em;
+                @extend %centered-content-computer;
+                h2 {
+                    grid-area: drinkName;
+                    font-size: larger;
+                    margin-bottom: 2em;
+                }
+                img {
+                    grid-area: img;
+                    max-width: 200px;
+                    width: 100%;
+                    height: auto;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                }
+                p {
+                    grid-area: instructions;
+                    font-size: medium;
+                    max-width: 300px;
+                    width: 100%;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                    margin-bottom: 0 !important;
+                }
+                ul {
+                    grid-area: recept;
+                    text-align: left;
+                    line-height: 20px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    font-size: medium;
+                    max-width: 300px;
+                    width: auto;
+                    margin-top: 0 !important;
+                }
+                .gif {
+                    grid-area: gif;
+                    max-width: 200px;
+                    width: 100%;
+                    height: auto;
+                    margin-right: 2em;
+                    margin-left: 2em;
+                }
+            }
         }
         .footer {
             grid-area: footer;

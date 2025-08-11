@@ -1,210 +1,23 @@
-@media (min-width: 1025px) {
-  body .footer, body .main #result, body .main, body .header, body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto;
-    margin: 0;
-  }
-  body .header {
-    grid-area: header;
-    margin-bottom: 2em;
-    display: grid;
-    grid-template-areas: "icon h1 headertext search";
-    grid-template-rows: auto;
-    gap: 3em;
-    padding: 2em;
-  }
-  body .header .icon {
-    grid-area: icon;
-  }
-  body .header h1 {
-    grid-area: h1;
-  }
-  body .header p {
-    grid-area: headertext;
-    margin-left: 5em;
-  }
-  body .header .search {
-    grid-area: search;
-  }
-  body .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  body .main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas: "result";
-    grid-template-rows: auto;
-    padding: 2em;
-    margin: auto;
-    flex: 1;
-  }
-  body .main #result {
-    grid-area: result;
-    display: grid;
-    grid-template-areas: "drinkName drinkName" "img instructions" "img recept" "gif gif";
-    grid-template-rows: auto auto auto;
-    row-gap: 0.2em;
-  }
-  body .main #result h2 {
-    grid-area: drinkName;
-    font-size: xx-large;
-    margin-bottom: 2em;
-  }
-  body .main #result img {
-    grid-area: img;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
-  }
-  body .main #result p {
-    grid-area: instructions;
-    font-size: larger;
-    max-width: 400px;
-    width: 100%;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-bottom: 0 !important;
-  }
-  body .main #result ul {
-    grid-area: recept;
-    text-align: left;
-    line-height: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: larger;
-    max-width: 400px;
-    width: auto;
-    margin-top: 0 !important;
-  }
-  body .main #result .gif {
-    grid-area: gif;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
-  }
-  body .footer {
-    grid-area: footer;
-    margin-top: 3em;
-    padding: 2em;
-    width: 100vw;
-  }
-  body .footer p {
-    font-size: large;
-  }
-}
-@media (max-width: 1024px) {
-  body .footer, body .main, body .header, body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto;
-    margin: 0;
-  }
-  body .header {
-    grid-area: header;
-    margin-bottom: 2em;
-    display: grid;
-    grid-template-areas: "icon h1 headertext";
-    grid-template-rows: auto;
-    gap: 3em;
-    padding: 2em;
-  }
-  body .header .icon {
-    grid-area: icon;
-  }
-  body .header h1 {
-    grid-area: h1;
-  }
-  body .header p {
-    grid-area: headertext;
-  }
-  body .main {
-    grid-area: main;
-    padding: 2em;
-    margin: auto;
-  }
-  body .footer {
-    grid-area: footer;
-    margin-top: 3em;
-    padding: 2em;
-    width: 100vw;
-  }
-  body .footer p {
-    font-size: large;
-  }
-}
-@media (max-width: 600px) {
-  body .footer, body .main, body .header, body {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: auto;
-    margin: 0;
-  }
-  body .header {
-    grid-area: header;
-    margin-bottom: 2em;
-    display: grid;
-    grid-template-areas: "icon h1" "headertextn headertext";
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 1em;
-  }
-  body .header .icon {
-    grid-area: icon;
-  }
-  body .header h1 {
-    grid-area: h1;
-  }
-  body .header p {
-    grid-area: headertext;
-  }
-  body .main {
-    grid-area: main;
-    padding: 2em;
-    margin: auto;
-  }
-  body .footer {
-    grid-area: footer;
-    margin-top: 3em;
-    padding: 2em;
-    width: 100vw;
-  }
-  body .footer p {
-    font-size: small;
-  }
-}
-@media (min-width: 1px) {
-  body {
-    background-color: lightyellow;
-    color: black;
-  }
-  body header {
-    background-color: rgb(255, 255, 142);
-  }
-  body footer {
-    background-color: rgb(255, 255, 142);
-  }
-}
+/* Error: From line 58, column 13 of src/css/_layout.scss: 
+ *    ╷
+ * 58 │             @extend %centered-content-computer;
+ *    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    ╵
+ * You may not @extend the same selector from within different media queries.
+ *     ,
+ * 290 |             @extend %centered-content-computer;
+ *     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   src/css/_layout.scss 290:13  @use
+ *   src/css/main.scss 2:1        root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: From line 58, column 13 of src/css/_layout.scss: \a    \2577 \a 58 \2502              @extend %centered-content-computer;\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \aYou may not @extend the same selector from within different media queries.\a     \2577 \a 290 \2502              @extend %centered-content-computer;\a     \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   src/css/_layout.scss 290:13  @use\a   src/css/main.scss 2:1        root stylesheet";
+}
