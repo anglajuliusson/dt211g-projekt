@@ -62,7 +62,7 @@
   body .main #result h2 {
     grid-area: drinkName;
     margin-bottom: 2em;
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   body .main #result img {
@@ -80,7 +80,7 @@
     max-width: 400px;
     margin-left: 2em;
     margin-right: 2em;
-    font-size: large;
+    font-size: larger;
   }
 
   body .main #result ul {
@@ -90,7 +90,7 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    font-size: large;
+    font-size: larger;
     line-height: 20px;
   }
 
