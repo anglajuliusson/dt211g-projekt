@@ -61,7 +61,7 @@
                 @extend %centered-content-computer;
                 h2 {
                     grid-area: drinkName;
-                    font-size: x-large;
+                    font-size: xx-large;
                     margin-bottom: 2em;
                 }
                 img {
@@ -74,7 +74,7 @@
                 }
                 p {
                     grid-area: instructions;
-                    font-size: large;
+                    font-size: larger;
                     max-width: 400px;
                     width: 100%;
                     margin-right: 2em;
@@ -86,7 +86,7 @@
                     line-height: 20px;
                     margin-right: auto;
                     margin-left: auto;
-                    font-size: large;
+                    font-size: larger;
                     max-width: 400px;
                     width: auto;
                 }
