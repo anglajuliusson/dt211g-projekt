@@ -40,7 +40,6 @@
     grid-template-rows: auto;
     padding: 2em;
     margin: auto;
-    flex: 1;
   }
   body .main #result {
     grid-area: result;
