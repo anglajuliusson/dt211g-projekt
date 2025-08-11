@@ -49,6 +49,7 @@
   body .main #result h2 {
     grid-area: drinkName;
     font-size: x-large;
+    margin-bottom: 2em;
   }
   body .main #result img {
     grid-area: img;
