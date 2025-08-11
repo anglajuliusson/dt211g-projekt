@@ -34,6 +34,7 @@
 
   body .header p {
     grid-area: headertext;
+    margin-left: 5em;
   }
 
   body .header .search {
