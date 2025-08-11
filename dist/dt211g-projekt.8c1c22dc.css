@@ -17,11 +17,15 @@
   body .header {
     grid-area: header;
     grid-template-rows: auto;
-    grid-template-areas: "h1 headertext";
+    grid-template-areas: "icon h1 headertext";
     gap: 3em;
     margin-bottom: 2em;
     padding: 2em;
     display: grid;
+  }
+
+  body .header .icon {
+    grid-area: icon;
   }
 
   body .header h1 {
@@ -69,11 +73,15 @@
   body .header {
     grid-area: header;
     grid-template-rows: auto;
-    grid-template-areas: "h1 headertext";
+    grid-template-areas: "icon h1 headertext";
     gap: 3em;
     margin-bottom: 2em;
     padding: 2em;
     display: grid;
+  }
+
+  body .header .icon {
+    grid-area: icon;
   }
 
   body .header h1 {
@@ -121,12 +129,16 @@
   body .header {
     grid-area: header;
     grid-template-rows: auto;
-    grid-template-areas: "h1"
-                         "headertext";
+    grid-template-areas: "icon h1"
+                         "headertextn headertext";
     gap: 10px;
     margin-bottom: 2em;
     padding: 1em;
     display: grid;
+  }
+
+  body .header .icon {
+    grid-area: icon;
   }
 
   body .header h1 {
