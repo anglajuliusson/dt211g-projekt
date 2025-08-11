@@ -30,8 +30,35 @@
   }
   body .main {
     grid-area: main;
+    display: grid;
+    grid-template-areas: "search" "result";
+    grid-template-rows: auto;
     padding: 2em;
     margin: auto;
+  }
+  body .main .search {
+    grid-area: search;
+  }
+  body .main #result {
+    grid-area: result;
+    display: grid;
+    grid-template-areas: "drinkName drinkName" "img instructions" "gif recept";
+    grid-template-rows: auto;
+  }
+  body .main #result h2 {
+    grid-area: drinkName;
+  }
+  body .main #result img {
+    grid-area: img;
+  }
+  body .main #result p {
+    grid-area: instructions;
+  }
+  body .main #result ul {
+    grid-area: recept;
+  }
+  body .main #result .gif {
+    grid-area: gif;
   }
   body .footer {
     grid-area: footer;
