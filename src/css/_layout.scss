@@ -39,9 +39,41 @@
         }
         .main {
             grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "search"
+            "result";
+            grid-template-rows: auto;
             padding: 2em;
             margin: auto;
             @extend %centered-content-computer;
+            .search {
+                grid-area: search;
+            }
+            #result {
+                grid-area: result;
+                display: grid;
+                grid-template-areas: 
+                "drinkName drinkName"
+                "img instructions"
+                "gif recept";
+                grid-template-rows: auto;
+                h2 {
+                    grid-area: drinkName;
+                }
+                img {
+                    grid-area: img;
+                }
+                p {
+                    grid-area: instructions;
+                }
+                ul {
+                    grid-area: recept;
+                }
+                .gif {
+                    grid-area: gif;
+                }
+            }
         }
         .footer {
             grid-area: footer;
