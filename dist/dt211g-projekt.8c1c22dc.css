@@ -17,7 +17,7 @@
   body .header {
     grid-area: header;
     grid-template-rows: auto;
-    grid-template-areas: "icon h1 headertext";
+    grid-template-areas: "icon h1 headertext search";
     gap: 3em;
     margin-bottom: 2em;
     padding: 2em;
@@ -36,18 +36,17 @@
     grid-area: headertext;
   }
 
+  body .header .search {
+    grid-area: search;
+  }
+
   body .main {
     grid-area: main;
     grid-template-rows: auto;
-    grid-template-areas: "search"
-                         "result";
+    grid-template-areas: "result";
     margin: auto;
     padding: 2em;
     display: grid;
-  }
-
-  body .main .search {
-    grid-area: search;
   }
 
   body .main #result {
