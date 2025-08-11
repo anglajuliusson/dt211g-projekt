@@ -1,5 +1,5 @@
 @media (min-width: 1025px) {
-  body .footer, body .main, body .header, body {
+  body .footer, body .main #result, body .main, body .header, body {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -71,6 +71,7 @@
     line-height: 20px;
     margin-right: 2em;
     margin-left: 2em;
+    font-size: large;
   }
   body .main #result .gif {
     grid-area: gif;
