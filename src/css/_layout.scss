@@ -41,6 +41,11 @@
                 grid-area: search;
             }
         }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
         .main {
             grid-area: main;
             display: grid;
@@ -49,6 +54,7 @@
             grid-template-rows: auto;
             padding: 2em;
             margin: auto;
+            flex: 1;
             @extend %centered-content-computer;
             #result {
                 grid-area: result;
