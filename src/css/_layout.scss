@@ -58,6 +58,7 @@
                 "img instructions"
                 "gif recept";
                 grid-template-rows: auto;
+                @extend %centered-content-computer;
                 h2 {
                     grid-area: drinkName;
                     font-size: x-large;
@@ -84,6 +85,7 @@
                     line-height: 20px;
                     margin-right: 2em;
                     margin-left: 2em;
+                    font-size: large;
                 }
                 .gif {
                     grid-area: gif;
