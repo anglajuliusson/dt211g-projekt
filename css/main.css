@@ -45,6 +45,7 @@
     display: grid;
     grid-template-areas: "drinkName drinkName" "img instructions" "gif recept";
     grid-template-rows: auto;
+    row-gap: 0.2em;
   }
   body .main #result h2 {
     grid-area: drinkName;
