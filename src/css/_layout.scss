@@ -278,6 +278,9 @@
             p {
                 grid-area: headertext;
             }
+            .search {
+                grid-area: search;
+            }
         }
         .main {
             grid-area: main;
