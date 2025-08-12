@@ -122,7 +122,8 @@
     display: grid;
     grid-template-areas: "icon h1" "headertext search";
     grid-template-rows: auto;
-    gap: 2em;
+    gap: 1em;
+    padding: 1em;
   }
   body .header .icon {
     grid-area: icon;

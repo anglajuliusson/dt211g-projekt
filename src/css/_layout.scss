@@ -147,7 +147,8 @@
             "icon h1"
             "headertext search";
             grid-template-rows: auto;
-            gap: 2em;
+            gap: 1em;
+            padding: 1em;
             .icon {
                 grid-area: icon;
             }
