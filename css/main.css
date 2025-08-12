@@ -208,7 +208,7 @@
   }
 }
 @media (max-width: 600px) {
-  body .footer, body .main #result, body .main, body .header, body {
+  body .footer, body .main #result .gif, body .main #result img, body .main #result, body .main, body .header, body {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -276,7 +276,7 @@
     width: 100%;
     margin-right: 2em;
     margin-left: 2em;
-    margin-bottom: 0 !important;
+    margin-bottom: 1em;
   }
   body .main #result ul {
     grid-area: recept;
