@@ -144,7 +144,7 @@
     display: grid;
     grid-template-areas: "result";
     grid-template-rows: auto;
-    padding: 2em;
+    padding: 1em;
     margin: auto;
     flex: 1;
   }
@@ -158,23 +158,23 @@
   body .main #result h2 {
     grid-area: drinkName;
     font-size: xx-large;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   body .main #result img {
     grid-area: img;
     max-width: 200px;
     width: 100%;
     height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
   body .main #result p {
     grid-area: instructions;
     font-size: larger;
     max-width: 400px;
     width: 100%;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
     margin-bottom: 0 !important;
   }
   body .main #result ul {
@@ -186,7 +186,7 @@
     font-size: larger;
     max-width: 400px;
     width: auto;
-    margin-top: 0 !important;
+    margin-top: 1em;
   }
   body .main #result .gif {
     grid-area: gif;
