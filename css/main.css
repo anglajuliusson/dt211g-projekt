@@ -223,7 +223,7 @@
     grid-area: header;
     margin-bottom: 2em;
     display: grid;
-    grid-template-areas: "icon h1" "headertext" "search";
+    grid-template-areas: "icon h1" "headertext headertext" "search search";
     grid-template-rows: auto;
     gap: 10px;
     padding: 1em;
