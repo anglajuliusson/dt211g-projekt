@@ -237,6 +237,9 @@
   body .header p {
     grid-area: headertext;
   }
+  body .header .search {
+    grid-area: search;
+  }
   body .main {
     grid-area: main;
     display: grid;
