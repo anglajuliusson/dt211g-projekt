@@ -302,8 +302,9 @@
                 "recept"
                 "gif";
                 grid-template-rows: auto auto auto;
-                row-gap: 0.2em;
+                row-gap: 1em;
                 @extend %centered-content-mobile;
+                justify-items: center;
                 h2 {
                     grid-area: drinkName;
                     font-size: larger;
@@ -314,8 +315,8 @@
                     max-width: 200px;
                     width: 100%;
                     height: auto;
-                    margin-right: 2em;
-                    margin-left: 2em;
+                    margin-right: auto;
+                    margin-left: auto;
                     @extend %centered-content-mobile
                 }
                 p {
@@ -343,8 +344,8 @@
                     max-width: 200px;
                     width: 100%;
                     height: auto;
-                    margin-right: 2em;
-                    margin-left: 2em;
+                    margin-right: auto;
+                    margin-left: auto;
                     @extend %centered-content-mobile
                 }
             }

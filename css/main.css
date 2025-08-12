@@ -254,7 +254,8 @@
     display: grid;
     grid-template-areas: "drinkName" "img" "instructions" "recept" "gif";
     grid-template-rows: auto auto auto;
-    row-gap: 0.2em;
+    row-gap: 1em;
+    justify-items: center;
   }
   body .main #result h2 {
     grid-area: drinkName;
@@ -266,8 +267,8 @@
     max-width: 200px;
     width: 100%;
     height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: auto;
+    margin-left: auto;
   }
   body .main #result p {
     grid-area: instructions;
@@ -294,8 +295,8 @@
     max-width: 200px;
     width: 100%;
     height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: auto;
+    margin-left: auto;
   }
   body .footer {
     grid-area: footer;
