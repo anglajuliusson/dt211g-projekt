@@ -308,6 +308,14 @@
     font-size: small;
   }
 }
+.search input, .search button {
+  font-size: 16px;
+  transition: font-size 0.3s ease-in-out;
+}
+.search input:hover, .search button:hover {
+  font-size: 20px;
+}
+
 @media (min-width: 1px) {
   body {
     background-color: lightyellow;
