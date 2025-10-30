@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 @media (width >= 1025px) {
-  body .footer, body .main #result, body .main, body .header, body {
+  body .footer, body .main #result, body .main, body {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -15,30 +27,59 @@
   }
 
   body .header {
-    grid-area: header;
-    grid-template-rows: auto;
-    grid-template-areas: "icon h1 headertext search";
-    gap: 3em;
-    margin-bottom: 2em;
-    padding: 2em;
-    display: grid;
+    position: relative;
   }
 
-  body .header .icon {
-    grid-area: icon;
+  body .header picture:last-of-type {
+    grid-area: 1 / 1 / -1 / -1;
   }
 
-  body .header h1 {
-    grid-area: h1;
+  body .header picture:last-of-type img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    display: block;
   }
 
-  body .header p {
-    grid-area: headertext;
-    margin-left: 5em;
+  body .header .header-content {
+    z-index: 2;
+    color: #000;
+    text-align: center;
+    background: #ffffe080;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 60%;
+    max-width: 600px;
+    padding: 2em 3em;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  body .header .search {
-    grid-area: search;
+  body .header .drinkInput {
+    background-color: #ffffe0;
+    border: solid #ffff8e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  body .header .search_button {
+    background-color: #ffff8e;
+    border: solid #ffff8e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  body .header:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    inset: 0;
   }
 
   body .wrapper {
@@ -58,6 +99,8 @@
   }
 
   body .main #result {
+    background-color: #ffff8e;
+    border-radius: 10px;
     grid-area: result;
     grid-template-rows: auto auto auto;
     grid-template-areas: "drinkName drinkName"
@@ -70,6 +113,7 @@
 
   body .main #result h2 {
     grid-area: drinkName;
+    margin-top: 1em;
     margin-bottom: 2em;
     font-size: xx-large;
   }
@@ -79,6 +123,7 @@
     width: 100%;
     max-width: 300px;
     height: auto;
+    margin-bottom: 2em;
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -127,7 +172,7 @@
 }
 
 @media (width <= 1024px) {
-  body .footer, body .main, body .header, body {
+  body .footer, body .main #result, body .main, body {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -143,31 +188,141 @@
   }
 
   body .header {
-    grid-area: header;
-    grid-template-rows: auto;
-    grid-template-areas: "icon h1 headertext";
-    gap: 3em;
-    margin-bottom: 2em;
-    padding: 2em;
-    display: grid;
+    position: relative;
   }
 
-  body .header .icon {
-    grid-area: icon;
+  body .header picture:last-of-type {
+    grid-area: 1 / 1 / -1 / -1;
   }
 
-  body .header h1 {
-    grid-area: h1;
+  body .header picture:last-of-type img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    display: block;
   }
 
-  body .header p {
-    grid-area: headertext;
+  body .header .header-content {
+    z-index: 2;
+    color: #000;
+    text-align: center;
+    background: #ffffe080;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 60%;
+    max-width: 600px;
+    padding: 2em 3em;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body .header .drinkInput {
+    background-color: #ffffe0;
+    border: solid #ffff8e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  body .header .search_button {
+    background-color: #ffff8e;
+    border: solid #ffff8e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  body .header h2 {
+    margin-top: 2em;
+  }
+
+  body .header:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+  }
+
+  body .wrapper {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
   }
 
   body .main {
+    flex: 1;
     grid-area: main;
+    grid-template-rows: auto;
+    grid-template-areas: "result";
     margin: auto;
-    padding: 2em;
+    padding: 1em;
+    display: grid;
+  }
+
+  body .main #result {
+    background-color: #ffff8e;
+    border-radius: 10px;
+    grid-area: result;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "drinkName drinkName"
+                         "img instructions"
+                         "img recept"
+                         "gif gif";
+    row-gap: .2em;
+    display: grid;
+  }
+
+  body .main #result h2 {
+    grid-area: drinkName;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: xx-large;
+  }
+
+  body .main #result img {
+    grid-area: img;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  body .main #result p {
+    grid-area: instructions;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: larger;
+    margin-bottom: 0 !important;
+  }
+
+  body .main #result ul {
+    text-align: left;
+    grid-area: recept;
+    width: auto;
+    max-width: 400px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    line-height: 20px;
+  }
+
+  body .main #result .gif {
+    grid-area: gif;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: auto;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   body .footer {
@@ -183,7 +338,7 @@
 }
 
 @media (width <= 600px) {
-  body .footer, body .main, body .header, body {
+  body .footer, body .main #result .gif, body .main #result img, body .main #result, body .main, body {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -199,32 +354,148 @@
   }
 
   body .header {
-    grid-area: header;
-    grid-template-rows: auto;
-    grid-template-areas: "icon h1"
-                         "headertextn headertext";
-    gap: 10px;
-    margin-bottom: 2em;
-    padding: 1em;
-    display: grid;
+    position: relative;
   }
 
-  body .header .icon {
-    grid-area: icon;
+  body .header picture:last-of-type {
+    grid-area: 1 / 1 / -1 / -1;
+  }
+
+  body .header picture:last-of-type img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  body .header picture:last-of-type .icon {
+    width: 100%;
+    max-width: 30px;
+  }
+
+  body .header .header-content {
+    z-index: 2;
+    color: #000;
+    text-align: center;
+    background: #ffffe080;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 80%;
+    max-width: 600px;
+    padding: 2em 3em;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   body .header h1 {
-    grid-area: h1;
+    font-size: large;
   }
 
   body .header p {
-    grid-area: headertext;
+    font-size: small;
+  }
+
+  body .header .drinkInput {
+    background-color: #ffffe0;
+    border: solid #ffff8e;
+    border-radius: 10px;
+    max-width: 100px;
+    padding: 5px;
+    font-size: small;
+  }
+
+  body .header .search_button {
+    background-color: #ffff8e;
+    border: solid #ffff8e;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+  }
+
+  body .header h2 {
+    margin-top: 2em;
+  }
+
+  body .header:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    inset: 0;
   }
 
   body .main {
+    flex: 1;
     grid-area: main;
+    grid-template-rows: auto;
+    grid-template-areas: "result";
     margin: auto;
     padding: 2em;
+    display: grid;
+  }
+
+  body .main #result {
+    grid-area: result;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "drinkName"
+                         "img"
+                         "instructions"
+                         "recept"
+                         "gif";
+    justify-items: center;
+    row-gap: 1em;
+    display: grid;
+  }
+
+  body .main #result h2 {
+    grid-area: drinkName;
+    margin-bottom: 2em;
+    font-size: larger;
+  }
+
+  body .main #result img {
+    grid-area: img;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body .main #result p {
+    grid-area: instructions;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: medium;
+  }
+
+  body .main #result ul {
+    text-align: left;
+    grid-area: recept;
+    width: auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    line-height: 20px;
+    margin-top: 0 !important;
+  }
+
+  body .main #result .gif {
+    grid-area: gif;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   body .footer {
@@ -237,6 +508,15 @@
   body .footer p {
     font-size: small;
   }
+}
+
+.search input, .search button {
+  font-size: 16px;
+  transition: font-size .3s ease-in-out;
+}
+
+.search input:hover, .search button:hover {
+  font-size: 20px;
 }
 
 @media (width >= 1px) {
