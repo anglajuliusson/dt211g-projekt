@@ -172,7 +172,7 @@ html, body {
 }
 
 @media (width <= 1024px) {
-  body .footer, body .main #result, body .main, body {
+  .footer, .main #result, .main, body {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -188,7 +188,10 @@ html, body {
   }
 
   body .header {
-    position: relative;
+    content: "";
+    z-index: 1;
+    position: absolute;
+    inset: 0;
   }
 
   body .header picture:last-of-type {
@@ -240,20 +243,13 @@ html, body {
     margin-top: 2em;
   }
 
-  body .header:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    inset: 0;
-  }
-
-  body .wrapper {
+  .wrapper {
     flex-direction: column;
     min-height: 100vh;
     display: flex;
   }
 
-  body .main {
+  .main {
     flex: 1;
     grid-area: main;
     grid-template-rows: auto;
@@ -263,7 +259,7 @@ html, body {
     display: grid;
   }
 
-  body .main #result {
+  .main #result {
     background-color: #ffff8e;
     border-radius: 10px;
     grid-area: result;
@@ -276,14 +272,14 @@ html, body {
     display: grid;
   }
 
-  body .main #result h2 {
+  .main #result h2 {
     grid-area: drinkName;
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: xx-large;
   }
 
-  body .main #result img {
+  .main #result img {
     grid-area: img;
     width: 100%;
     max-width: 200px;
@@ -293,7 +289,7 @@ html, body {
     margin-right: 1em;
   }
 
-  body .main #result p {
+  .main #result p {
     grid-area: instructions;
     width: 100%;
     max-width: 400px;
@@ -303,7 +299,7 @@ html, body {
     margin-bottom: 0 !important;
   }
 
-  body .main #result ul {
+  .main #result ul {
     text-align: left;
     grid-area: recept;
     width: auto;
@@ -315,7 +311,7 @@ html, body {
     line-height: 20px;
   }
 
-  body .main #result .gif {
+  .main #result .gif {
     grid-area: gif;
     width: 100%;
     max-width: 200px;
@@ -325,14 +321,14 @@ html, body {
     margin-right: 1em;
   }
 
-  body .footer {
+  .footer {
     grid-area: footer;
     width: 100vw;
     margin-top: 3em;
     padding: 2em;
   }
 
-  body .footer p {
+  .footer p {
     font-size: large;
   }
 }
