@@ -82,6 +82,10 @@ html, body {
               inset: 0;
               z-index: 1;
             }
+            .inspo_text {
+              margin-top: 2em;
+              font-weight: bold;
+            }
           }
         .wrapper {
             display: flex;
@@ -240,6 +244,10 @@ html, body {
               position: absolute;
               inset: 0;
               z-index: 1;
+            }
+            .inspo_text {
+              margin-top: 2em;
+              font-weight: bold;
             }
           }
         .wrapper {
