@@ -11,12 +11,21 @@
         @include dark-text;
         header {
             background-color: base.$header-color;
+            .drinkInput {
+                background-color: base.$background-color;
+            }
             .search_button {
                 background-color: base.$button-color;
             }
             a {
                 @include dark-text;
                 background-color: base.$link-color;
+            }
+        }
+        main {
+            background-color: base.$background-color;
+            #result {
+                background-color: base.$header-color;
             }
         }
         footer {
