@@ -1,4 +1,4 @@
-@use "base";
+@use "base" as *;
 
 * {
     margin: 0;
@@ -66,11 +66,9 @@ html, body {
               .drinkInput {
                 border-radius: 10px;
                 border: solid rgb(255, 255, 142);
-                background-color: lightyellow;
                 padding: 10px;
               }
               .search_button {
-                background-color: rgb(255, 255, 142);
                 border: solid rgb(255, 255, 142);
                 border-radius: 10px;
                 padding: 10px;
@@ -84,6 +82,13 @@ html, body {
             }
             .inspo_text {
               margin-top: 2em;
+              font-weight: bold;
+            }
+            .idea_link {
+              border: solid $link-color;
+              border-radius: 10px;
+              padding: 10px;
+              text-decoration: none;
               font-weight: bold;
             }
           }
@@ -113,7 +118,6 @@ html, body {
                 grid-template-rows: auto auto auto;
                 row-gap: 0.2em;
                 @extend %centered-content-computer;
-                background-color: rgb(255, 255, 142);
                 border-radius: 10px;
                 h2 {
                     grid-area: drinkName;
@@ -227,11 +231,9 @@ html, body {
               .drinkInput {
                 border-radius: 10px;
                 border: solid rgb(255, 255, 142);
-                background-color: lightyellow;
                 padding: 10px;
               }
               .search_button {
-                background-color: rgb(255, 255, 142);
                 border: solid rgb(255, 255, 142);
                 border-radius: 10px;
                 padding: 10px;
@@ -247,6 +249,13 @@ html, body {
             }
             .inspo_text {
               margin-top: 2em;
+              font-weight: bold;
+            }
+            .idea_link {
+              border: solid $link-color;
+              border-radius: 10px;
+              padding: 10px;
+              text-decoration: none;
               font-weight: bold;
             }
           }
@@ -276,7 +285,6 @@ html, body {
                 grid-template-rows: auto auto auto;
                 row-gap: 0.2em;
                 @extend %centered-content;
-                background-color: rgb(255, 255, 142);
                 border-radius: 10px;
                 h2 {
                     grid-area: drinkName;
@@ -398,13 +406,11 @@ html, body {
               .drinkInput {
                 border-radius: 10px;
                 border: solid rgb(255, 255, 142);
-                background-color: lightyellow;
                 padding: 5px;
                 max-width: 100px;
                 font-size: small;
               }
               .search_button {
-                background-color: rgb(255, 255, 142);
                 border: solid rgb(255, 255, 142);
                 border-radius: 5px;
                 padding: 5px;
@@ -419,6 +425,14 @@ html, body {
               position: absolute;
               inset: 0;
               z-index: 1;
+            }
+            .idea_link {
+              border: solid $link-color;
+              border-radius: 5px;
+              padding: 5px;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: small;
             }
           }
         .main {

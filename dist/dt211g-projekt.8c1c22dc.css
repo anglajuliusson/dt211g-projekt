@@ -61,15 +61,7 @@ html, body {
     transform: translate(-50%, -50%);
   }
 
-  body .header .drinkInput {
-    background-color: #ffffe0;
-    border: solid #ffff8e;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  body .header .search_button {
-    background-color: #ffff8e;
+  body .header .drinkInput, body .header .search_button {
     border: solid #ffff8e;
     border-radius: 10px;
     padding: 10px;
@@ -80,6 +72,19 @@ html, body {
     z-index: 1;
     position: absolute;
     inset: 0;
+  }
+
+  body .header .inspo_text {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+
+  body .header .idea_link {
+    border: solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   body .wrapper {
@@ -99,7 +104,6 @@ html, body {
   }
 
   body .main #result {
-    background-color: #ffff8e;
     border-radius: 10px;
     grid-area: result;
     grid-template-rows: auto auto auto;
@@ -225,15 +229,7 @@ html, body {
     transform: translate(-50%, -50%);
   }
 
-  body .header .drinkInput {
-    background-color: #ffffe0;
-    border: solid #ffff8e;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  body .header .search_button {
-    background-color: #ffff8e;
+  body .header .drinkInput, body .header .search_button {
     border: solid #ffff8e;
     border-radius: 10px;
     padding: 10px;
@@ -241,6 +237,19 @@ html, body {
 
   body .header h2 {
     margin-top: 2em;
+  }
+
+  body .inspo_text {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+
+  body .idea_link {
+    border: solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   .wrapper {
@@ -260,7 +269,6 @@ html, body {
   }
 
   .main #result {
-    background-color: #ffff8e;
     border-radius: 10px;
     grid-area: result;
     grid-template-rows: auto auto auto;
@@ -398,7 +406,6 @@ html, body {
   }
 
   body .header .drinkInput {
-    background-color: #ffffe0;
     border: solid #ffff8e;
     border-radius: 10px;
     max-width: 100px;
@@ -407,7 +414,6 @@ html, body {
   }
 
   body .header .search_button {
-    background-color: #ffff8e;
     border: solid #ffff8e;
     border-radius: 5px;
     padding: 5px;
@@ -423,6 +429,15 @@ html, body {
     z-index: 1;
     position: absolute;
     inset: 0;
+  }
+
+  body .header .idea_link {
+    border: solid gold;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   body .main {
@@ -521,7 +536,28 @@ html, body {
     background-color: #ffffe0;
   }
 
-  body header, body footer {
+  body header {
+    background-color: #ffff8e;
+  }
+
+  body header .drinkInput {
+    background-color: #ffffe0;
+  }
+
+  body header .search_button {
+    background-color: #ffff8e;
+  }
+
+  body header a {
+    color: #000;
+    background-color: gold;
+  }
+
+  body main {
+    background-color: #ffffe0;
+  }
+
+  body main #result, body footer {
     background-color: #ffff8e;
   }
 }
