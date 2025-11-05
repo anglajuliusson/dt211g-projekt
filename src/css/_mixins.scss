@@ -11,6 +11,13 @@
         @include dark-text;
         header {
             background-color: base.$header-color;
+            .search_button {
+                background-color: base.$button-color;
+            }
+            a {
+                @include dark-text;
+                background-color: base.$link-color;
+            }
         }
         footer {
             background-color: base.$footer-color;
