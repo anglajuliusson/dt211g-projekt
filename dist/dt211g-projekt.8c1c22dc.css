@@ -173,6 +173,31 @@ html, body {
   body .footer p {
     font-size: large;
   }
+
+  body .idea_body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    display: grid;
+  }
+
+  body .idea_body .idea_main h3 {
+    font-size: larger;
+  }
+
+  body .idea_body .idea_main ol {
+    text-align: center;
+    margin: 1em 0;
+    padding: 0;
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+
+  body .idea_body .idea_main ol li {
+    margin: .3em 0;
+    display: list-item;
+  }
 }
 
 @media (width <= 1024px) {
@@ -527,6 +552,15 @@ html, body {
 }
 
 .search input:hover, .search button:hover {
+  font-size: 20px;
+}
+
+.idea_link {
+  font-size: 16px;
+  transition: font-size .3s ease-in-out;
+}
+
+.idea_link:hover {
   font-size: 20px;
 }
 
