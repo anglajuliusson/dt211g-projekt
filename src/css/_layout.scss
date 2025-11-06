@@ -196,7 +196,17 @@ html, body {
 
         .header {
             position: relative; // Gör headern till referens för absolut positionering
-          
+            height: 70vh;
+            overflow: hidden;
+
+            .header_img {
+              width: 100%;
+              max-height: 70vh !important;
+              height: 100% !important;   
+              overflow: hidden;
+              object-fit: cover; 
+              display: block;
+            }
             picture:last-of-type {
               grid-area: headerimg;
               grid-column: 1 / -1;
@@ -359,83 +369,40 @@ html, body {
         grid-template-rows: auto;
         margin: 0;
         @extend %centered-content-mobile;
-        .header {
-            position: relative; // Gör headern till referens för absolut positionering
-          
-            picture:last-of-type {
-              grid-area: headerimg;
-              grid-column: 1 / -1;
-              grid-row: 1 / -1;
-              
-              img {
-                max-width: 100vw;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                display: block;
-              }
-              .icon {
-                max-width: 30px;
-                width: 100%;
-              }
-            }
-            // Text, ikon och sökfält ska ligga ovanpå bilden
+          header {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
             .header-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 2;
-                background: rgb(255, 255, 224, 0.5); // Transparent bakgrund
-                color: black;
-                padding: 2em 3em;
-                border-radius: 1em;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 1em;
-                width: 80%; // begränsa bredden så det inte täcker hela bilden
-                max-width: 600px;
-              }
-              h1 {
+              width: 80% !important;
+              max-width: 600px !important;
+              gap: 0.5em !important;
+            }
+            h1 {
+                font-size: x-large;
+            }
+            h2 {
                 font-size: large;
-              }
-              p {
-                font-size: small;
-              }
-              .drinkInput {
-                border-radius: 10px;
-                border: solid rgb(255, 255, 142);
-                padding: 5px;
-                max-width: 100px;
-                font-size: small;
-              }
-              .search_button {
-                border: solid rgb(255, 255, 142);
-                border-radius: 5px;
-                padding: 5px;
-                font-size: small;
-              }
-              h2 {
-                margin-top: 2em;
-              }
-            // Lägg till ett overlay-lager för bättre kontrast
-            &::before {
-              content: "";
-              position: absolute;
-              inset: 0;
-              z-index: 1;
             }
-            .idea_link {
-              border: solid $link-color;
-              border-radius: 5px;
+            .header_img {
+                width: 100%;
+                max-height: 50vh !important;
+                height: 100% !important;   
+                overflow: hidden;
+                object-fit: cover; 
+                display: block;
+            }
+            .drinkInput {
+              border-radius: 10px;
+              border: solid rgb(255, 255, 142);
               padding: 5px;
-              text-decoration: none;
-              font-weight: bold;
-              font-size: small;
             }
-          }
+            .search_button {
+              border: solid rgb(255, 255, 142);
+              border-radius: 10px;
+              padding: 5px;
+            }
+        }
         .main {
             grid-area: main;
             display: grid;
