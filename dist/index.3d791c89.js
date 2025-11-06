@@ -1,2 +1,0 @@
-let e=document.getElementById("open-menu"),n=document.getElementById("close-menu");function t(){let e=document.getElementById("nav-menu");"none"===window.getComputedStyle(e).display?e.style.display="block":e.style.display="none"}e.addEventListener("click",t),n.addEventListener("click",t),document.addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".animering_btn");e.addEventListener("click",function(){e.classList.toggle("active")})});
-//# sourceMappingURL=index.3d791c89.js.map
