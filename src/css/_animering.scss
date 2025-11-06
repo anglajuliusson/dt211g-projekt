@@ -13,3 +13,11 @@ $transition-speed: 0.3s;
     }
   }
 }
+.idea_link {
+  font-size: $font-size;
+  transition: font-size $transition-speed ease-in-out;
+
+  &:hover {
+    font-size: $hover-size;
+  }
+}
