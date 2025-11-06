@@ -1,0 +1,56 @@
+.idea_body {
+    display: grid;
+    grid-template-areas: 
+    "idea_header"
+    "idea_main"
+    "footer";
+    grid-template-rows: auto;
+    .idea_header {
+      grid-area: idea_header;
+      display: grid;
+      grid-template-areas: 
+      "";
+    }
+    .idea_main {
+      h3 {
+        font-size: larger;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+    
+      .top_list {
+        ul {
+          list-style: none; // tar bort punkter
+          padding: 0;
+          margin: 2em auto;
+        }
+    
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 2em 0;
+          text-align: center;
+    
+          .top_list_text {
+            max-width: 400px; // begränsar textbredd
+            width: 100%;
+            margin: 0.5em auto;
+            line-height: 1.5;
+          }
+    
+          picture {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin-top: 0.5em;
+          }
+    
+          img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }}
