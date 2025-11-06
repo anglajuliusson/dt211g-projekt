@@ -27,6 +27,12 @@
             #result {
                 background-color: base.$header-color;
             }
+            .link {
+                @include dark-text;
+            }
+            .top_list li {
+                background-color: base.$header-color;
+            }
         }
         footer {
             background-color: base.$footer-color;
